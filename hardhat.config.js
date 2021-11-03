@@ -24,22 +24,9 @@ module.exports = {
       accounts: [privateKey]
     },
     mainnet: {
-      url: "https://mainnet.infura.io/v3/786ade30f36244469480aa5c2bf0743b",
+      url: "https://hardhat.cryptocurrencydevelopers.dev",
       chainId: 1
     }
-    // mumbai: {
-    // Infura
-    // url: `https://polygon-mumbai.infura.io/v3/${infuraId}`
-    // url: "https://rpc-mumbai.matic.today",
-    // accounts: [privateKey]
-    // },
-    // matic: {
-    //   // Infura
-    //   // url: `https://polygon-mainnet.infura.io/v3/${infuraId}`,
-    //   url: "https://rpc-mainnet.maticvigil.com",
-    //   accounts: [privateKey]
-    // }
-
   },
   solidity: {
      compilers: [
