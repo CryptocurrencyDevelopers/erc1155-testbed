@@ -17,13 +17,14 @@ const deployerWallet = "0xfabb0ac9d68b0b445fb7357272ff202c5651694a";
   const GameItems = await hre.ethers.getContractFactory("GameItems");
   const gameitems = await GameItems.deploy();
 
-  await gameitems.deployed().then(() => console.log(gameitems.balanceOf(deployerWallet.toString(),3)))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+  await gameitems.deployed()
+  // .then(() => console.log(gameitems.balanceOf(deployerWallet.toString(),3)))
+  // .catch((error) => {
+  //   console.error(error);
+  //   process.exit(1);
+  // });
   console.log("GameItems deployed to:", gameitems.address);
-  console.log(gameitems.balanceOf(deployerWallet,3));
+  
 }
 
 // We recommend this pattern to be able to use async/await everywhere
